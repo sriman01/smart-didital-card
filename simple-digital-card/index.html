@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./CSS/styles.css">
+  <title>ID Card</title>
+</head>
+<body>
+  <div id="'#root">
+      <div class='container'>
+        <div class='logo-container'>
+          <img src='./public/hdfc-logo.png' class='logo' alt='HDFC Life logo'>
+        </div>
+        <!-- profile image -->
+        <div class='profile-container'>
+          <div class="img-container">
+            <label for="profileImageInput">
+              <img src='./public/profile.png' class='img' alt='profile-img' id="profileImage">
+            </label>
+            <input type="file" id="profileImageInput" accept="image/*" style="display:none">
+          </div>
+          <h1 class='title'></h1>
+          <h4 class='designation'></h4>
+        </div>
+
+       <div class="parent">
+         <div class='code-parent-container'>
+           <div class='line'></div>
+           <div class='code-container'>
+             <p class='code'></p>
+           </div>
+           <div class='line'></div>
+         </div>
+         <div class='details'>
+           <div class="parent-pos">
+             <div class="pos-container">
+                <div>Department :</div>
+                <div>Branch : </div>
+                <div>Valid as on :</div>
+             </div>
+             <div class="pos-container">
+               <span class='pos'></span>
+               <span class='pos'></span>
+               <span class='pos'></span>
+             </div>
+           </div>
+          </div>
+          <div class='full-line'></div>
+       </div>
+
+
+        <div class='contact-container'>
+          <div class="icon-container">
+            <div class="call-box">
+              <ion-icon name="call"></ion-icon>
+            </div>
+            <div class="mail-box">
+              <ion-icon name="mail-open-outline"></ion-icon>
+            </div>
+          </div>
+
+          <div class="mob-container">
+            <div class='connect' id="mob"></div>
+            <div class='connect' id="mail"></div>
+          </div>
+        </div>
+
+
+        <div class='disclaimer'>
+          Disclaimer: This is a digitally generated ID card. Please check the validity of the ID card mentioned above.
+        </div>
+        <div class='footer'>
+          <div class='footer-content'>
+            Powered by meCard.me
+          </div>
+        </div>
+      </div>
+  </div>
+  <script src='Script/data.js'></script>
+  <script src='Script/app.js'></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
